@@ -3,14 +3,38 @@ body	{
 	background-color: white;
 	text-align: left;
 	text-align: justify;
-	margin-right: 120px;
-	margin-left: 120px;
 }
 
 .section-flex {
 	display: flex;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	justify-content: center;
+}
+
+.card {
+
+}
+
+.button {
+	color:white;
+	background: #b43200;
+	padding: 15px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	justify-content: center;
+	width: 10px;
+}
+
+.button-div {
+	margin-top: 30px;
+}
+
+.button:hover {
+	background: darkred;
+	transition: 800ms;
+}
+
+.profile-image {
+	margin-right: 40px;
 }
 
 .banner {
@@ -23,6 +47,11 @@ body	{
 
 .container {
 	margin: auto;
+	width: 90%;
+}
+
+.div-space {
+	margin: 60px 0px 60px 0px;
 }
 
 img	{
@@ -30,23 +59,16 @@ img	{
 	text-align: left;
 }
 
-.jessica {
-	float:left;
-	margin-left:300px; 
-}
-
 h1 {
 	font-weight: bolder;
 	text-align: left;
 	font-size: 30px;
 	font-family: 'Hammersmith One', sans-serif;
-	letter-spacing: 20px;
-	margin-left: 50px;	
+	letter-spacing: 20px;	
 }		
 
 .aboutme {
-	margin-left:150px; 
-	margin-right:300px; 
+	width: 400px;
 }
 
 .intro {
@@ -92,13 +114,13 @@ h4 {
 	margin-top: 100px;
 	margin-bottom: 100px;
 	border: solid;
+	padding: 15px;
 }
 
 .contact-flex{
 	display: flex;
 	justify-content: flex-start
 	color: black;
-
 }
 
 .vin {
@@ -135,7 +157,6 @@ h4 {
 
 .vivino {
 	color: #b43200;
-	width: 100px;
 	font-size: 30px;
 }
 
@@ -148,8 +169,45 @@ h4 {
 	margin-right:50px;
  }
 
- @media	(max-width: 500px) {
- 	{
- 		width: 400px;
+ @media	(max-width: 1400px) {
+ 	.links {
+ 		margin-left:20px; 
  	}
+
+ }
+
+ @media	(max-width: 900px) {
+ 	.container {
+ 		width: 90%;
+ 	}
+ 	 .section-flex {
+ 		display: block;
+ 	}
+ }
+
+  @media	(max-width: 700px) {
+ 	 .section-two-flex {
+ 		display: block;
+ 	}
+ }
+
+  @media	(max-width: 400px) {
+ 	.container{
+ 		width: 350px;
+ 	}
+ 	 .section-flex {
+ 		display: block;
+ 	}
+ 	.card {
+	width: 300px;
+	}
+	.aboutme{
+		width: 300px;
+	}
+	h1 {
+		font-size: 14px;
+	}
+	.facebook{
+		width: 80px;
+	}
  }
